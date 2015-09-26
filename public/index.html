@@ -5,113 +5,305 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <meta name="description" content="">
-        <meta name="author" content="">
+        <meta name="author" content="github.com/MichaelSjoeberg">
 
-        <title>BowerBootSass</title>
+        <title>Welcome | BowerBootSass</title>
 
-        <!-- CSS -->
         <link href="css/main.css" rel="stylesheet">
+        <link href="css/animate.min.css" rel="stylesheet">
+
     </head>
 
-    <body>
+    <body id="page-top">
 
-        <nav class="navbar navbar-default">
+        <!-- Main navigation -->
+        <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
+
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+
+                    <!-- Menu button for mobile -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">BowerBootSass</a>
+
+                    <!-- Logo -->
+                    <a class="navbar-brand page-scroll" href="#page-top">BowerBootSass</a>
                 </div>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
+                <!-- Menu links -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                        <li><a href="#">Link</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Action</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Separated action</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Separated action</a></li>
-                            </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a class="page-scroll" href="#about">About</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#including">Including</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#contact">Contact</a>
                         </li>
                     </ul>
-                    <form class="navbar-form navbar-left" role="search">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Type here...">
-                        </div>
-                        <button type="submit" class="btn btn-default">Search</button>
-                    </form>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Link</a></li>
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
+                </div>
+
+            </div>
         </nav>
 
         <!-- Splash -->
-        <div class="container">
-
-            <!-- Alert -->
-            <div class="alert alert-warning alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <strong>Alert!</strong> Click the cross to remove.
+        <header>
+            <div class="header-content">
+                <div class="header-content-inner">
+                    <h1>A huge introduction</h1>
+                    <hr>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et purus eget magna laoreet aliquam.</p>
+                    <a href="#about" class="btn btn-default btn__red btn__hover__red-hover btn-xl page-scroll">Find Out More</a>
+                </div>
             </div>
+        </header>
 
-            <!-- Text -->
-            <div class="padding-md center">
-                <h1>Bootstrap starter template</h1>
-                <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-                <h2>Icons</h2>
-                <p><i class="fa fa-rocket"></i></p>
+        <!-- About -->
+        <section class="bg-primary" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 center">
+                        <h2 class="section-heading">We've amazing ideas.</h2>
+                        <hr class="hr__blue">
+                        <p class="text-muted">Aliquam ornare sapien ut velit consectetur, eget ornare arcu euismod. Integer iaculis et augue sed sagittis. In euismod eros ut libero pretium, quis volutpat ante sollicitudin.</p>
+                        <a href="#" class="btn btn-default btn__blue btn__hover__blue-hover">Get Started!</a>
+                    </div>
+                </div>
             </div>
+        </section>
 
-        </div><!-- /.container -->
-
-        <!-- Boxes -->
-        <div class="container">
-            <div class="row">
-                  <div class="col-md-4">
-                      <div class="jumbotron">
-                          <h2>First box</h2>
-                          <p>...</p>
-                          <p><a class="btn btn-primary btn-lg noborder" href="#" role="button">Learn more</a></p>
-                      </div>
-                  </div>
-                  <div class="col-md-4">
-                      <div class="jumbotron">
-                          <h2>Second box</h2>
-                          <p>...</p>
-                          <p><a class="btn btn-primary btn-lg noborder" href="#" role="button">Learn more</a></p>
-                      </div>
-                  </div>
-                  <div class="col-md-4">
-                      <div class="jumbotron">
-                          <h2>Third box</h2>
-                          <p>...</p>
-                          <p><a class="btn btn-primary btn-lg noborder" href="#" role="button">Learn more</a></p>
-                      </div>
-                  </div>
+        <!-- Including -->
+        <section id="including">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 center">
+                        <h2 class="section-heading">Including</h2>
+                        <hr class="hr__dark">
+                    </div>
+                </div>
             </div>
-        </div>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-12 col-lg-6">
+
+                        <!-- Bootstrap -->
+                        <div class="col-md-6 center no-padding">
+                            <div class="service-box wow fadeInUp">
+                                <i class="fa fa-4x fa-tablet"></i>
+                                <h3>Bootstrap</h3>
+                                <p class="text-muted">Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.</p>
+                                <p class="padding-sm"><a href="#">Read more...</a></p>
+                            </div>
+                        </div>
+
+                        <!-- Bower -->
+                        <div class="col-md-6 center no-padding">
+                            <div class="service-box wow fadeInUp" data-wow-delay=".1s">
+                                <i class="fa fa-4x fa-archive"></i>
+                                <h3>Bower</h3>
+                                <p class="text-muted">Frameworks, libraries, assets, utilities, and rainbows. Bower manages all these things for you.</p>
+                                <p class="padding-sm"><a href="#">Read more...</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-lg-6">
+
+                        <!-- FontAwesome -->
+                        <div class="col-md-6 center no-padding">
+                            <div class="service-box wow fadeInUp" data-wow-delay=".2s">
+                                <i class="fa fa-4x fa-magic"></i>
+                                <h3>FontAwesome</h3>
+                                <p class="text-muted">Scalable vector icons that can instantly be customized - size, color, drop shadow, and anything that can be done with the power of CSS.</p>
+                                <p class="padding-sm"><a href="#">Read more...</a></p>
+                            </div>
+                        </div>
+
+                        <!-- Sass -->
+                        <div class="col-md-6 center no-padding">
+                            <div class="service-box wow fadeInUp" data-wow-delay=".3s">
+                                <i class="fa fa-4x fa-code"></i>
+                                <h3>Sass</h3>
+                                <p class="text-muted">Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</p>
+                                <p class="padding-sm"><a href="#">Read more...</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section class="no-padding" id="portfolio">
+            <div class="container-fluid">
+                <div class="row no-gutter">
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="#" class="portfolio-box">
+                            <img src="http://placehold.it/650x350" class="img-responsive" alt="">
+                            <div class="portfolio-box-caption portfolio__hover__red">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-muted">
+                                        Category
+                                    </div>
+                                    <div class="project-name">
+                                        Project Name
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="#" class="portfolio-box">
+                            <img src="http://placehold.it/650x350" class="img-responsive" alt="">
+                            <div class="portfolio-box-caption portfolio__hover__yellow">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-muted">
+                                        Category
+                                    </div>
+                                    <div class="project-name">
+                                        Project Name
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="#" class="portfolio-box">
+                            <img src="http://placehold.it/650x350" class="img-responsive" alt="">
+                            <div class="portfolio-box-caption portfolio__hover__yellow">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-muted">
+                                        Category
+                                    </div>
+                                    <div class="project-name">
+                                        Project Name
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="#" class="portfolio-box">
+                            <img src="http://placehold.it/650x350" class="img-responsive" alt="">
+                            <div class="portfolio-box-caption portfolio__hover__blue">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-muted">
+                                        Category
+                                    </div>
+                                    <div class="project-name">
+                                        Project Name
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="#" class="portfolio-box">
+                            <img src="http://placehold.it/650x350" class="img-responsive" alt="">
+                            <div class="portfolio-box-caption portfolio__hover__red">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-muted">
+                                        Category
+                                    </div>
+                                    <div class="project-name">
+                                        Project Name
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="#" class="portfolio-box">
+                            <img src="http://placehold.it/650x350" class="img-responsive" alt="">
+                            <div class="portfolio-box-caption portfolio__hover__red">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-muted">
+                                        Category
+                                    </div>
+                                    <div class="project-name">
+                                        Project Name
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <aside class="bg-dark">
+            <div class="container center">
+                <div class="call-to-action">
+                    <h2>Check this, it's very important!</h2>
+                    <a href="#" class="btn btn-default btn__white btn__hover__yellow">OK!</a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Contact -->
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 center ">
+                        <h2 class="section-heading">Contact</h2>
+                        <hr class="hr__dark">
+                        <p>Fusce nec augue a mi facilisis interdum vel maximus eros. Etiam in ante velit. Integer non imperdiet eros, et placerat orci. Curabitur rutrum arcu a vulputate vestibulum.</p>
+                    </div>
+                    <div class="col-md-12 padding-lg margin-top border-muted">
+                        <div class="col-sm-3 center">
+                            <a class="link__blue link__hover__blue-hover" href="#">
+                                <i class="fa fa-facebook fa-3x wow bounceIn"></i>
+                                <p class="no-margin">Like us on Facebook</p>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 center">
+                            <a class="link__blue link__hover__blue-hover" href="#">
+                                <i class="fa fa-twitter fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                                <p class="no-margin">Follow us on Twitter</p>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 center">
+                            <a class="link__hover__red" href="#">
+                                <i class="fa fa-phone fa-3x wow bounceIn" data-wow-delay=".2s"></i>
+                                <p class="no-margin">555-045-2336</p>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 center">
+                            <a class="link__hover__red" href="#">
+                                <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                                <p class="no-margin">hello@gmail.com</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
-        <!-- Backup jQuery -->
+
+        <!-- Local jQuery -->
         <script src="js/jquery.min.js"></script>
 
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <!-- Bootstrap -->
         <script src="js/bootstrap.min.js"></script>
+
+        <!-- Scripts -->
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/jquery.fittext.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/main.js"></script>
 
     </body>
 </html>
