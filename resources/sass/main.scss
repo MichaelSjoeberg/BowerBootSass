@@ -1,0 +1,26 @@
+// Font
+// @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200,600,700,900);
+$font-family-base: 'Source Sans Pro', sans-serif;
+$font-size-base: 14px;
+$line-height-base: 1.4;
+$font-weight-normal: 100;
+$font-weight-bold: 400;
+
+// Imports
+@import "bootstrap"; 
+@import "font-awesome";
+@import "buttons";
+@import "index";
+
+// Body
+body {
+	padding-top 		: 0;
+	font-family 		: $font-family-base;
+	font-size 			: $font-size-base;
+	line-height 		: $line-height-base;
+	font-weight 		: $font-weight-normal;
+}
+
+// Shortcodes
+.center { text-align: center !important; }
+.padding-md { padding: 40px 0px; }

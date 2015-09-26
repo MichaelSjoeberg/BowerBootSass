@@ -1,0 +1,9 @@
+
+// Remove border from buttons
+.btn {
+
+	&.noborder {
+		border-radius: 0;
+		border: 0px solid transparent;
+	}
+}
