@@ -1,9 +1,83 @@
 
-// Remove border from buttons
-.btn {
+// Buttons
+// --------------------------
 
-	&.noborder {
-		border-radius: 0;
-		border: 0px solid transparent;
-	}
+/* General */
+.btn {
+    border                  : 0;
+    border-radius           : 300px;
+    text-transform          : uppercase;
+    font-family             : $font-family-base;
+    font-weight             : $font-weight-bold;
+    padding 				: 15px 30px;
+    margin-top              : 20px;
+}
+
+.btn-xl {
+	font-size 				: 2.0rem;
+	padding 				: 25px 50px;
+}
+
+.btn-default {
+	color 					: $white;
+	background-color 		: $grey-base;
+	-webkit-transition      : all .35s;
+    -moz-transition         : all .35s;
+    transition              : all .35s;
+
+    /* Buttons colors */
+	&.btn__white  { background-color: $white; color: $grey-base; }
+	&.btn__blue   { background-color: $blue; }
+	&.btn__yellow { background-color: $yellow; color: $grey-base; }
+	&.btn__red    { background-color: $red; }
+}
+
+/* Hover */
+.btn-default:hover,
+.btn-default:focus,
+.btn-default.focus,
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+    color                   : $white;
+    background-color        : $grey-base;
+
+    /* Hover colors */
+    &.btn__hover__white  	 { background-color: $white; color: $grey-base; }
+    &.btn__hover__blue 	     { background-color: $blue; }
+    &.btn__hover__blue-hover { background-color: $blue-hover; }
+    &.btn__hover__yellow  	 { background-color: $yellow; color: $grey-base; }
+	&.btn__hover__red        { background-color: $red; }
+	&.btn__hover__red-hover  { background-color: $red-hover; }
+}
+
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default { background-image: none; }
+
+.btn-default.disabled,
+.btn-default[disabled],
+fieldset[disabled] .btn-default,
+.btn-default.disabled:hover,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default:hover,
+.btn-default.disabled:focus,
+.btn-default[disabled]:focus,
+fieldset[disabled] .btn-default:focus,
+.btn-default.disabled.focus,
+.btn-default[disabled].focus,
+fieldset[disabled] .btn-default.focus,
+.btn-default.disabled:active,
+.btn-default[disabled]:active,
+fieldset[disabled] .btn-default:active,
+.btn-default.disabled.active,
+.btn-default[disabled].active,
+fieldset[disabled] .btn-default.active {
+    border-color            : $white;
+    background-color        : $white;
+}
+
+.btn-default .badge {
+    color                   : $white;
+    background-color        : $grey-base;
 }

@@ -1,0 +1,109 @@
+
+// Base
+// --------------------------
+
+/* General */
+html, body {
+	width 				: 100%;
+    height 				: 100%;
+}
+
+body {
+	padding-top 		: 0;
+	font-family 		: $font-family-base;
+	font-size 			: $font-size-base;
+	line-height 		: $line-height-base;
+	font-weight 		: $font-weight-normal;
+}
+
+::-moz-selection {
+    text-shadow             : none;
+    color                   : $white;
+    background              : $grey-base;
+}
+
+::selection {
+    text-shadow             : none;
+    color                   : $white;
+    background              : $grey-base;
+}
+
+img::selection {
+    color                   : $white;
+    background              : 0 0;
+}
+
+img::-moz-selection {
+    color                   : $white;
+    background              : 0 0;
+}
+
+body { webkit-tap-highlight-color: $grey-base; }
+
+/* Text */
+a {
+    color                   : $grey-base;
+    text-decoration         : none; 
+    -webkit-transition      : all .35s;
+    -moz-transition         : all .35s;
+    transition              : all .35s;
+
+    &.link__blue   { color: $blue; }
+    &.link__yellow { color: $yellow; } 
+    &.link__red    { color: $red; }
+}
+
+a:hover,
+a:focus { 
+    text-decoration         : none;
+
+    &.link__hover__blue { color: $blue; }
+    &.link__hover__blue-hover { color: $blue-hover; }
+    &.link__hover__yellow { color: $yellow; }
+    &.link__hover__red { color: $red; }
+    &.link__hover__red-hover { color: $red-hover; }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { font-family: $font-family-base; }
+
+p {
+    margin-bottom           : 20px;
+    font-size               : 2rem;
+}
+
+.text-muted { 
+    color                   : inherit;
+    opacity                 : 0.75;
+}
+
+.border-muted {
+    border                  : 10px solid;
+    border-color            : $grey-light; 
+}
+
+/* Misc */
+hr {
+    max-width               : 5rem;
+    border-width            : 3px;
+    border-color            : $red;
+
+    &.hr__white { border-color: $white; }
+    &.hr__dark  { border-color: $grey-base; }
+    &.hr__blue  { border-color: $blue; }
+}
+
+.bg-primary { background-color: $red; }
+
+.bg-dark {
+    color                   : $white;
+    background-color        : $grey-base;
+}
+
+section { padding: 100px 0; }
+
+aside { padding: 50px 0; }

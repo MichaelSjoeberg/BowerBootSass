@@ -1,26 +1,38 @@
-// Font
+
+// Main
+// --------------------------
+
+/* Font */
 // @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200,600,700,900);
-$font-family-base: 'Source Sans Pro', sans-serif;
-$font-size-base: 14px;
-$line-height-base: 1.4;
-$font-weight-normal: 100;
-$font-weight-bold: 400;
+$font-family-base 		: 'Source Sans Pro', sans-serif;
+$font-size-base 		: 16px;
+$line-height-base 		: 1.4;
+$font-weight-normal 	: 100;
+$font-weight-bold 		: 600;
 
-// Imports
-@import "bootstrap"; 
+/* Color */
+$white 					: #ffffff;
+$grey-base 				: #333232;
+$grey-light 			: #f0f1ee;
+$blue					: #1854a0;
+$blue-hover				: #104383;
+$yellow 				: #fed36d;
+$red 					: #f96a67;
+$red-hover 				: #d15956;
+
+/* Partials */
+@import "bootstrap";
 @import "font-awesome";
+@import "base";
 @import "buttons";
-@import "index";
+@import "navbar";
+@import "pages/startpage";
 
-// Body
-body {
-	padding-top 		: 0;
-	font-family 		: $font-family-base;
-	font-size 			: $font-size-base;
-	line-height 		: $line-height-base;
-	font-weight 		: $font-weight-normal;
-}
-
-// Shortcodes
-.center { text-align: center !important; }
-.padding-md { padding: 40px 0px; }
+/* Shortcode */
+.center  	{ text-align: center !important; }
+.no-margin  { margin: 0 !important; }
+.margin-top { margin-top: 20px !important;}
+.no-padding { padding: 0 !important; }
+.padding-sm { padding: 20px 0px !important; }
+.padding-md { padding: 40px 0px !important; }
+.padding-lg { padding: 60px 0px !important; }
