@@ -9,7 +9,7 @@ header {
     min-height              : auto;
     text-align              : center;
     color                   : $white;
-    background-image        : url(../img/theme/header.jpg);
+    background-image        : url(../img/splash/3.jpg);
     background-position     : center;
     -webkit-background-size : cover;
     -moz-background-size    : cover;
@@ -115,8 +115,8 @@ header .header-content .header-content-inner p {
     -moz-transition         : all .35s;
     transition              : all .35s;
 
-    &.portfolio__hover__blue { background: rgba(24,84,160,0.9); }
-    &.portfolio__hover__red { background: rgba(249,106,103,0.9); }
+    &.portfolio__hover__blue   { background: rgba(24,84,160,0.9); }
+    &.portfolio__hover__red    { background: rgba(249,106,103,0.9); }
     &.portfolio__hover__yellow { background: rgba(254,211,109,0.9); }
 }
 
@@ -148,4 +148,26 @@ header .header-content .header-content-inner p {
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category { font-size: 2rem; }
 
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name { font-size: 3rem; }
+}
+
+/* Footer */
+footer {
+
+    a { color: $white; }
+    a:hover {
+        color               : $white;
+        text-decoration     : underline; 
+    }
+
+    p.footer__copyright { font-size: 1.4rem; }
+}
+
+footer .footer-links ul {
+    list-style          : none;
+
+    li {
+        font-size: 2rem;
+        font-weight: $font-weight-normal;
+        line-height: 2.1;
+    }
 }

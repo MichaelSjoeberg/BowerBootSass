@@ -48,6 +48,7 @@ a {
     -moz-transition         : all .35s;
     transition              : all .35s;
 
+    &.link__white  { color: $white; }
     &.link__blue   { color: $blue; }
     &.link__yellow { color: $yellow; } 
     &.link__red    { color: $red; }
@@ -57,11 +58,11 @@ a:hover,
 a:focus { 
     text-decoration         : none;
 
-    &.link__hover__blue { color: $blue; }
+    &.link__hover__blue       { color: $blue; }
     &.link__hover__blue-hover { color: $blue-hover; }
-    &.link__hover__yellow { color: $yellow; }
-    &.link__hover__red { color: $red; }
-    &.link__hover__red-hover { color: $red-hover; }
+    &.link__hover__yellow     { color: $yellow; }
+    &.link__hover__red        { color: $red; }
+    &.link__hover__red-hover  { color: $red-hover; }
 }
 
 h1,
@@ -69,7 +70,10 @@ h2,
 h3,
 h4,
 h5,
-h6 { font-family: $font-family-base; }
+h6 { 
+    font-family             : $font-family-base; 
+    font-weight             : $font-weight-bold; 
+}
 
 p {
     margin-bottom           : 20px;
@@ -86,6 +90,60 @@ p {
     border-color            : $grey-light; 
 }
 
+/* Alerts */
+.alert {
+    border                  : 0;
+    border-radius           : 0;
+
+    &.alert-success {
+        background-color: rgba(90,224,87,0.20);
+        color: $green-hover;
+
+        .alert-link { color: $green-hover; }
+    }
+
+    &.alert-warning {
+        background-color: rgba(254,211,109,0.25);
+        color: $yellow-hover;
+
+        .alert-link { color: $yellow-hover; }
+    }
+
+    &.alert-info {
+        background-color: rgba(24,84,160,0.10);
+        color: $blue-hover;
+
+        .alert-link { color: $blue-hover; }
+    }
+
+    &.alert-danger {
+        background-color: rgba(249,106,103,0.10);
+        color: $red-hover;
+
+        .alert-link { color: $red-hover; }
+    }
+
+    .close {
+        color: inherit;
+        text-shadow: 0 0px 0 #fff;
+        opacity: 0.75;
+    }
+
+    .close:hover { opacity: 1; }
+}
+
+/* Backgrounds */
+
+.bg {
+    color                   : $white;
+    background-color        : $grey-base;
+
+    &.bg__grey-light { background-color: $grey-light; }
+    &.bg__blue       { background-color: $blue; }
+    &.bg__yellow     { background-color: $yellow; }
+    &.bg__red        { background-color: $red; }
+}
+
 /* Misc */
 hr {
     max-width               : 5rem;
@@ -97,13 +155,6 @@ hr {
     &.hr__blue  { border-color: $blue; }
 }
 
-.bg-primary { background-color: $red; }
+section, .section { padding: 100px 0; }
 
-.bg-dark {
-    color                   : $white;
-    background-color        : $grey-base;
-}
-
-section { padding: 100px 0; }
-
-aside { padding: 50px 0; }
+aside, .aside { padding: 50px 0; }

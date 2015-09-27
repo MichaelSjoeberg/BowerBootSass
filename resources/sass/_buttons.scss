@@ -43,12 +43,12 @@
     background-color        : $grey-base;
 
     /* Hover colors */
-    &.btn__hover__white  	 { background-color: $white; color: $grey-base; }
-    &.btn__hover__blue 	     { background-color: $blue; }
-    &.btn__hover__blue-hover { background-color: $blue-hover; }
-    &.btn__hover__yellow  	 { background-color: $yellow; color: $grey-base; }
-	&.btn__hover__red        { background-color: $red; }
-	&.btn__hover__red-hover  { background-color: $red-hover; }
+    &.btn__hover__white  	   { background-color: $white; color: $grey-base; }
+    &.btn__hover__blue 	       { background-color: $blue; }
+    &.btn__hover__blue-hover   { background-color: $blue-hover; }
+    &.btn__hover__yellow  	   { background-color: $yellow; color: $white; }
+	&.btn__hover__red          { background-color: $red; }
+	&.btn__hover__red-hover    { background-color: $red-hover; }
 }
 
 .btn-default:active,

@@ -14,11 +14,14 @@ $font-weight-bold 		: 600;
 $white 					: #ffffff;
 $grey-base 				: #333232;
 $grey-light 			: #f0f1ee;
-$blue					: #1854a0;
-$blue-hover				: #104383;
-$yellow 				: #fed36d;
-$red 					: #f96a67;
-$red-hover 				: #d15956;
+$blue					: #1854a0; /* 24,84,160 */
+$blue-hover				: #104383; /* 16,67,131 */
+$yellow 				: #fed36d; /* 254,211,109 */
+$yellow-hover 			: #c28800; /* 190,138,13 */ 	// for warning only.
+$red 					: #f96a67; /* 249,106,103 */
+$red-hover 				: #d15956; /* 209,89,86 */
+$green 					: #5ae057; /* 90,224,87 */ 		// for success only.
+$green-hover 			: #32a230; /* 50,162,48 */ 		// for success only.
 
 /* Partials */
 @import "bootstrap";
@@ -29,10 +32,16 @@ $red-hover 				: #d15956;
 @import "pages/startpage";
 
 /* Shortcode */
-.center  	{ text-align: center !important; }
-.no-margin  { margin: 0 !important; }
-.margin-top { margin-top: 20px !important;}
-.no-padding { padding: 0 !important; }
-.padding-sm { padding: 20px 0px !important; }
-.padding-md { padding: 40px 0px !important; }
-.padding-lg { padding: 60px 0px !important; }
+.center  		   { text-align: center !important; }
+	   
+.no-margin  	   { margin: 0 !important; }
+.margin-top 	   { margin-top: 20px !important;}
+
+.no-padding  	   { padding: 0 !important; }
+.no-padding-bottom { padding-bottom: 0 !important; }
+.padding-sm   	   { padding: 20px 0px !important; }
+.padding-md   	   { padding: 40px 0px !important; }
+.padding-lg   	   { padding: 60px 0px !important; }
+
+.no-border-radius  { border-radius: 0 !important; }
+.full-width 	   { width: 100% !important; }
