@@ -26,6 +26,7 @@ $green-hover 			: #32a230; /* 50,162,48 */ 		// for success only.
 /* Partials */
 @import "bootstrap";
 @import "font-awesome";
+@import "plugins/animate.min";
 @import "base";
 @import "buttons";
 @import "navbar";

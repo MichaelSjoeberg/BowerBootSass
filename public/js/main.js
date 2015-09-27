@@ -1,12 +1,7 @@
-/*!
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-
 (function($) {
-    "use strict"; // Start of use strict
+    "use strict";
 
-    // jQuery for page scrolling feature - requires jQuery Easing plugin
+    // Page scrolling - requires jQuery Easing plugin
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
@@ -15,7 +10,7 @@
         event.preventDefault();
     });
 
-    // Highlight the top nav as scrolling occurs
+    // Highlight the top nav when scrolling
     $('body').scrollspy({
         target: '.navbar-fixed-top',
         offset: 51
@@ -44,4 +39,4 @@
     // Initialize WOW.js Scrolling Animations
     new WOW().init();
 
-})(jQuery); // End of use strict
+})(jQuery);

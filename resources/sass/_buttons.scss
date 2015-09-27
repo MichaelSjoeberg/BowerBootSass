@@ -41,6 +41,7 @@
 .open > .dropdown-toggle.btn-default {
     color                   : $white;
     background-color        : $grey-base;
+    outline                 : none;  
 
     /* Hover colors */
     &.btn__hover__white  	   { background-color: $white; color: $grey-base; }
@@ -73,8 +74,9 @@ fieldset[disabled] .btn-default:active,
 .btn-default.disabled.active,
 .btn-default[disabled].active,
 fieldset[disabled] .btn-default.active {
+    color                   : $grey-base; 
     border-color            : $white;
-    background-color        : $white;
+    background-color        : $grey-light;
 }
 
 .btn-default .badge {

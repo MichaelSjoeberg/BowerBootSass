@@ -133,12 +133,11 @@ p {
 }
 
 /* Backgrounds */
-
 .bg {
     color                   : $white;
     background-color        : $grey-base;
 
-    &.bg__grey-light { background-color: $grey-light; }
+    &.bg__grey-light { background-color: $grey-light; color: $grey-base; }
     &.bg__blue       { background-color: $blue; }
     &.bg__yellow     { background-color: $yellow; }
     &.bg__red        { background-color: $red; }
