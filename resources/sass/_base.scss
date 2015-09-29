@@ -125,11 +125,12 @@ p {
 
     .close {
         color: inherit;
-        text-shadow: 0 0px 0 #fff;
+        text-shadow: 0;
         opacity: 0.75;
+        filter: alpha(opacity=75);
     }
 
-    .close:hover { opacity: 1; }
+    .close:hover { opacity: 1; filter: alpha(opacity=100); }
 }
 
 /* Backgrounds */
@@ -157,3 +158,26 @@ hr {
 section, .section { padding: 100px 0; }
 
 aside, .aside { padding: 50px 0; }
+
+/* Modal */
+.modal-content {
+    position                    : relative;
+    background-color            : $white;
+    border                      : 0px solid $grey-light;
+    border                      : 0px solid rgba(0,0,0,0.2);
+    border-radius               : 0;
+    -webkit-box-shadow          : 5px 5px 0px rgba(0,0,0,0.15);
+    box-shadow                  : 5px 5px 0px rgba(0,0,0,0.15);
+    background-clip             : padding-box;
+    outline                     : 0;
+
+    .close {
+        color                   : $grey-base;
+        text-shadow             : 0;
+        opacity                 : 0.75;
+        filter                  : alpha(opacity=75);
+    }
+
+    .close:hover { opacity: 1; filter: alpha(opacity=100); }
+}
+

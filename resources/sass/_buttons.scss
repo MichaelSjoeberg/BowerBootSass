@@ -28,7 +28,7 @@
     /* Buttons colors */
 	&.btn__white  { background-color: $white; color: $grey-base; }
 	&.btn__blue   { background-color: $blue; }
-	&.btn__yellow { background-color: $yellow; color: $grey-base; }
+	&.btn__yellow { background-color: $yellow; color: $white; }
 	&.btn__red    { background-color: $red; }
 }
 
@@ -48,6 +48,7 @@
     &.btn__hover__blue 	       { background-color: $blue; }
     &.btn__hover__blue-hover   { background-color: $blue-hover; }
     &.btn__hover__yellow  	   { background-color: $yellow; color: $white; }
+    &.btn__hover__yellow-hover { background-color: $yellow-hover; color: $white; }
 	&.btn__hover__red          { background-color: $red; }
 	&.btn__hover__red-hover    { background-color: $red-hover; }
 }

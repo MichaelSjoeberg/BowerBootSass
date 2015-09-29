@@ -69,14 +69,19 @@ header .header-content .header-content-inner p {
 /* Misc */
 .section-heading { margin-top: 0; }
 
-.call-to-action h2 { margin: 0 auto 20px; }
+.call-to-action h2 { margin: 0; }
+
+@media(min-width: 992px) {
+    .call-to-action h2 { margin: 0.9rem auto 0; }
+    .call-to-action .btn { margin: 0; }
+}
 
 .no-gutter > [class*=col-] {
     padding-right           : 0;
     padding-left            : 0;
 }
 
-/* Services */
+/* Including */
 .service-box {
     background-color        : transparent;
     margin                  : 50px auto 0;
