@@ -33,6 +33,28 @@ $green-base 			: #5ae057;
 $green-light 			: rgba($green-base, .25);
 $green-dark 			: darken($green-base, 15%);
 
+/* Alternate Colors */
+
+// $grey-base 				: #50514F;
+// $grey-light 			: lighten($grey-base, 65%);
+// $grey-dark 				: darken($grey-base, 5%);
+
+// $blue-base				: #5CC8FF;
+// $blue-light 			: rgba($blue-base, .15);
+// $blue-dark				: darken($blue-base, 5%);
+
+// $yellow-base 			: #FED36D;
+// $yellow-light 			: rgba($yellow-base, .4);
+// $yellow-dark 			: darken($yellow-base, 20%);
+
+// $red-base 				: #F25F5C;
+// $red-light 			 	: rgba($red-base, .15);
+// $red-dark 				: darken($red-base, 5%);
+
+// $green-base 			: #82D173;
+// $green-light 			: rgba($green-base, .15);
+// $green-dark 			: darken($green-base, 15%);
+
 /* Partials */
 @import "bootstrap";
 @import "font-awesome";
