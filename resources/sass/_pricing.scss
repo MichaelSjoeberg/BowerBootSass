@@ -23,10 +23,10 @@
         color                   : $white;
         background-color        : $grey-base;
 
-        &.bg__grey-light { background-color: $grey-light; color: $grey-base; }
-        &.bg__blue       { background-color: $blue; }
-        &.bg__yellow     { background-color: $yellow; }
-        &.bg__red        { background-color: $red; }
+        &.bg-grey-light  { background-color: $grey-light; color: $grey-base; }
+        &.bg-blue-base   { background-color: $blue-base; }
+        &.bg-yellow-base { background-color: $yellow-base; }
+        &.bg-red-base    { background-color: $red-base; }
     }
 }
 
@@ -39,7 +39,7 @@
     background-color            : $grey-base; 
 
     /* Hover colors */
-    &.bg__hover__blue         { background-color: $blue; color: $white; }
-    &.bg__hover__yellow       { background-color: $yellow; color: $white; }
-    &.bg__hover__red          { background-color: $red; color: $white; }
+    &.bg-hover-blue-base   { background-color: $blue-base; color: $white; }
+    &.bg-hover-yellow-base { background-color: $yellow-base; color: $white; }
+    &.bg-hover-red-base    { background-color: $red-base; color: $white; }
 }

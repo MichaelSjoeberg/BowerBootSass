@@ -4,10 +4,10 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <meta name="description" content="">
+        <meta name="description" content="Basic template for an one-pager website, using Bower, Bootstrap, FontAwesome, Sass, and Gulp.">
         <meta name="author" content="github.com/MichaelSjoeberg">
 
-        <title>Welcome | BowerBootSass</title>
+        <title>Basic Template | BowerBootSass</title>
 
         <link href="css/main.css" rel="stylesheet">
 
@@ -59,22 +59,22 @@
             <div class="header-content">
                 <div class="header-content-inner">
                     <h1>A huge introduction</h1>
-                    <hr>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et purus eget magna laoreet aliquam.</p>
-                    <a href="#about" class="btn btn-default btn__red btn__hover__red-hover btn-xl page-scroll">Find Out More</a>
+                    <hr class="hr-red-base">
+                    <p class="text-muted">It's amazingly important to have a great and big introductory line to welcome visitors to your page, they'll love it!</p>
+                    <a href="#about" class="btn btn-primary btn-red-base btn-hover-red-dark btn-xl page-scroll">Get started!</a>
                 </div>
             </div>
         </header>
 
         <!-- About -->
-        <section class="bg bg__red" id="about">
+        <section class="bg bg-red-base" id="about">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 center">
                         <h2 class="section-heading">Beautiful background colors.</h2>
-                        <hr class="hr__blue">
-                        <p class="text-muted">Aliquam ornare sapien ut velit consectetur, eget ornare arcu euismod. Integer iaculis et augue sed sagittis. In euismod eros ut libero pretium, quis volutpat ante sollicitudin.</p>
-                        <a href="#" class="btn btn-default btn__blue btn__hover__blue-hover">Get Started!</a>
+                        <hr class="hr-blue-base">
+                        <p class="text-muted">Simply add <code>bg</code> and <code>bg-red-base</code> to a section like this and it will have a stunning red background.</p>
+                        <a href="#including" class="btn btn-primary btn-blue-base btn-hover-blue-dark page-scroll">Find out more</a>
                     </div>
                 </div>
             </div>
@@ -86,8 +86,8 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 center">
                         <h2 class="section-heading">Including</h2>
-                        <hr class="hr__blue">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et purus eget magna laoreet aliquam.</p>
+                        <hr class="hr-red-base">
+                        <p>Read more about what's included in the package.</p>
                     </div>
                 </div>
             </div>
@@ -105,7 +105,7 @@
                                     <i class="fa fa-4x fa-tablet"></i>
                                     <h4>Bootstrap</h4>
                                     <p class="text-muted">Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.</p>
-                                    <p class="padding-sm"><a href="#">Read more...</a></p>
+                                    <p class="padding-sm"><a href="http://getbootstrap.com/" target="_blank">Read more</a></p>
                                 </div>
                             </div>
 
@@ -115,7 +115,7 @@
                                     <i class="fa fa-4x fa-archive"></i>
                                     <h4>Bower</h4>
                                     <p class="text-muted">Frameworks, libraries, assets, utilities, and rainbows. Bower manages all these things for you.</p>
-                                    <p class="padding-sm"><a href="#">Read more...</a></p>
+                                    <p class="padding-sm"><a href="http://bower.io/" target="_blank">Read more</a></p>
                                 </div>
                             </div>
                         </div>
@@ -128,7 +128,7 @@
                                     <i class="fa fa-4x fa-magic"></i>
                                     <h4>FontAwesome</h4>
                                     <p class="text-muted">Scalable vector icons that can instantly be customized - size, color, drop shadow, and anything that can be done with the power of CSS.</p>
-                                    <p class="padding-sm"><a href="#">Read more...</a></p>
+                                    <p class="padding-sm"><a href="https://fortawesome.github.io/Font-Awesome/" target="_blank">Read more</a></p>
                                 </div>
                             </div>
 
@@ -138,7 +138,7 @@
                                     <i class="fa fa-4x fa-code"></i>
                                     <h4>Sass</h4>
                                     <p class="text-muted">Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</p>
-                                    <p class="padding-sm"><a href="#">Read more...</a></p>
+                                    <p class="padding-sm"><a href="http://sass-lang.com/" target="_blank">Read more</a></p>
                                 </div>
                             </div>
                         </div>
@@ -146,12 +146,183 @@
                 </div>
             </div>
 
+            <!-- Colors -->
+            <div class="container margin-top-md">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h3 class="section-heading">Color Palette</h3>
+                        <p>Colors are based on a single value, such as <code>blue-base</code> and then manipulated using <code>darken(blue-base, 10%)</code> and <code>lighten(blue-base, 15%)</code>, or <code>rgba(blue-base, 0.5)</code>, for optimal consistency.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+
+                    <!-- Grey -->
+                    <div class="col-md-12 padding-sm">
+                        <div class="col-sm-12">
+
+                            <div class="col-md-2 color-palette grey dark-2">
+                                <p class="text-white text-muted margin-top-sm">Grey</p>
+                            </div>
+
+                            <div class="col-md-2 color-palette grey dark-1">
+                                <p class="text-white margin-top-sm"><br></p>
+                            </div>
+
+                            <div class="col-md-2 color-palette grey">
+                                <p class="text-white margin-top-sm"><br></p>
+                            </div>
+
+                            <div class="col-md-2 color-palette grey light-1">
+                                <p class="text-white margin-top-sm"><br></p>
+                            </div>
+
+                            <div class="col-md-2 color-palette grey light-2">
+                                <p class="text-white margin-top-sm"><br></p>
+                            </div>
+
+                            <div class="col-md-2 color-palette grey light-3">
+                                <p class="text-white margin-top-sm"><br></p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Blue -->
+                    <div class="col-md-12 padding-sm">
+                        <div class="col-sm-12">
+
+                            <div class="col-md-2 color-palette blue dark-2">
+                                <p class="text-white text-muted margin-top-sm">Blue</p>
+                            </div>
+
+                            <div class="col-md-2 color-palette blue dark-1">
+                                <p class="text-white margin-top-sm"><br></p>
+                            </div>
+
+                            <div class="col-md-2 color-palette blue">
+                                <p class="text-white margin-top-sm"><br></p>
+                            </div>
+
+                            <div class="col-md-2 color-palette blue light-1">
+                                <p class="text-white margin-top-sm"><br></p>
+                            </div>
+
+                            <div class="col-md-2 color-palette blue light-2">
+                                <p class="text-white margin-top-sm"><br></p>
+                            </div>
+
+                            <div class="col-md-2 color-palette blue light-3">
+                                <p class="text-white margin-top-sm"><br></p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Red -->
+                    <div class="col-md-12 padding-sm">
+                        <div class="col-sm-12">
+
+                            <div class="col-md-2 color-palette red dark-2">
+                                <p class="text-white text-muted margin-top-sm">Red</p>
+                            </div>
+
+                            <div class="col-md-2 color-palette red dark-1">
+                                <p class="text-white margin-top-sm"><br></p>
+                            </div>
+
+                            <div class="col-md-2 color-palette red">
+                                <p class="text-white margin-top-sm"><br></p>
+                            </div>
+
+                            <div class="col-md-2 color-palette red light-1">
+                                <p class="text-white margin-top-sm"><br></p>
+                            </div>
+
+                            <div class="col-md-2 color-palette red light-2">
+                                <p class="text-white margin-top-sm"><br></p>
+                            </div>
+
+                            <div class="col-md-2 color-palette red light-3">
+                                <p class="text-white margin-top-sm"><br></p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Yellow -->
+                    <div class="col-md-12 padding-sm">
+                        <div class="col-sm-12">
+
+                            <div class="col-md-2 color-palette yellow dark-2">
+                                <p class="text-white text-muted margin-top-sm">Yellow</p>
+                            </div>
+
+                            <div class="col-md-2 color-palette yellow dark-1">
+                                <p class="text-white margin-top-sm"><br></p>
+                            </div>
+
+                            <div class="col-md-2 color-palette yellow">
+                                <p class="text-white margin-top-sm"><br></p>
+                            </div>
+
+                            <div class="col-md-2 color-palette yellow light-1">
+                                <p class="text-white margin-top-sm"><br></p>
+                            </div>
+
+                            <div class="col-md-2 color-palette yellow light-2">
+                                <p class="text-white margin-top-sm"><br></p>
+                            </div>
+
+                            <div class="col-md-2 color-palette yellow light-3">
+                                <p class="text-white margin-top-sm"><br></p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Green -->
+                    <div class="col-md-12 padding-sm">
+                        <div class="col-sm-12">
+
+                            <div class="col-md-2 color-palette green dark-2">
+                                <p class="text-white text-muted margin-top-sm">Green</p>
+                            </div>
+
+                            <div class="col-md-2 color-palette green dark-1">
+                                <p class="text-white margin-top-sm"><br></p>
+                            </div>
+
+                            <div class="col-md-2 color-palette green">
+                                <p class="text-white margin-top-sm"><br></p>
+                            </div>
+
+                            <div class="col-md-2 color-palette green light-1">
+                                <p class="text-white margin-top-sm"><br></p>
+                            </div>
+
+                            <div class="col-md-2 color-palette green light-2">
+                                <p class="text-white margin-top-sm"><br></p>
+                            </div>
+
+                            <div class="col-md-2 color-palette green light-3">
+                                <p class="text-white margin-top-sm"><br></p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
             <!-- Alerts -->
-            <div class="container margin-top">
+            <div class="container margin-top-lg">
                 <div class="row">
                     <div class="col-md-8">
                         <h3 class="section-heading">Alerts</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et purus eget magna laoreet aliquam.</p>
+                        <p>To inform visitors about events on your page, add <code>alert</code> and <code>alert-info</code>, or <code>alert-warning</code> etc. and it's done, <code>alert-dismissible</code> will enable closing the alert.</p>
                     </div>
                 </div>
             </div>
@@ -162,24 +333,24 @@
                     <div class="col-md-12 padding-sm">
                         <div class="col-sm-12">
 
-                            <div class="alert alert-success alert-dismissible margin-top wow fadeInUp" role="alert">
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                <strong>Well done!</strong> You successfully read this important alert message. <a href="#" class="alert-link">Read more...</a>
-                            </div>
-
-                            <div class="alert alert-warning alert-dismissible margin-top wow fadeInUp" role="alert" data-wow-delay=".1s">
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                <strong>Warning!</strong> Better check yourself, you're not looking too good. <a href="#" class="alert-link">Read more...</a>
-                            </div>
-
-                            <div class="alert alert-info alert-dismissible margin-top wow fadeInUp" role="alert" data-wow-delay=".2s">
+                            <div class="alert alert-info alert-dismissible margin-top-sm wow fadeInUp" role="alert" data-wow-delay=".2s">
                                 <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                 <strong>Heads up!</strong> This alert needs your attention, but it's not super important. <a href="#" class="alert-link">Read more...</a>
                             </div>
 
-                            <div class="alert alert-danger alert-dismissible margin-top wow fadeInUp" role="alert" data-wow-delay=".3s">
+                            <div class="alert alert-danger alert-dismissible margin-top-sm wow fadeInUp" role="alert" data-wow-delay=".3s">
                                 <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                 <strong>Oh snap!</strong> Change a few things up and try submitting again. <a href="#" class="alert-link">Read more...</a>
+                            </div>
+
+                            <div class="alert alert-warning alert-dismissible margin-top-sm wow fadeInUp" role="alert" data-wow-delay=".1s">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <strong>Warning!</strong> Better check yourself, you're not looking too good. <a href="#" class="alert-link">Read more...</a>
+                            </div>
+
+                            <div class="alert alert-success alert-dismissible margin-top-sm wow fadeInUp" role="alert">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <strong>Well done!</strong> You successfully read this important alert message.
                             </div>
 
                         </div>
@@ -189,11 +360,11 @@
             </div>
 
             <!-- Buttons -->
-            <div class="container margin-top">
+            <div class="container margin-top-lg">
                 <div class="row">
                     <div class="col-md-8">
                         <h3 class="section-heading">Buttons</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et purus eget magna laoreet aliquam.</p>
+                        <p>There's plenty of buttons to choose between, <code>btn</code> and <code>btn-primary</code> will create a basic button.</p>
                     </div>
                 </div>
             </div>
@@ -205,38 +376,38 @@
                     <div class="col-md-12 col-lg-8 col-lg-offset-2">
 
                         <div class="col-md-6 padding-sm">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et purus eget magna laoreet aliquam.</p>
-                            <a href="#" class="btn btn-default btn-xl page-scroll">Big button, hover red</a>
+                            <p>Add <code>btn-xl</code> to make it bigger.</p>
+                            <a href="#" class="btn btn-primary btn-xl page-scroll">Big button</a>
                         </div>
 
                         <div class="col-md-6 padding-sm">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et purus eget magna laoreet aliquam.</p>
+                            <p>...or <code>btn-blue-base</code> and <code>btn-hover-blue-dark</code> to add colors.</p>
                             <div class="col-md-6">
-                                <a href="#" class="btn btn-default btn__blue btn__hover__blue-hover page-scroll">Blue button</a>
+                                <a href="#" class="btn btn-primary btn-blue-base btn-hover-blue-dark page-scroll">Blue button</a>
                             </div>
                             <div class="col-md-6">
-                                <a href="#" class="btn btn-default btn__red btn__hover__red-hover page-scroll">Red button</a>
+                                <a href="#" class="btn btn-primary btn-red-base btn-hover-red-dark page-scroll">Red button</a>
                             </div>
                         </div>
 
                     </div>
 
-                    <div class="col-md-12 margin-top">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et purus eget magna laoreet aliquam.</p>
+                    <div class="col-md-12 margin-top-md">
+                        <p>It's also possible to add <code>no-border-radius</code> to remove the radius and <code>btn-block</code> to make the button full width.</p>
                     </div>
 
                     <div class="col-md-12 padding-sm">
 
                         <div class="col-md-12">
-                            <a href="#" class="btn btn-default btn__hover__yellow page-scroll no-border-radius btn-block">Hover Yellow</a>
+                            <a href="#" class="btn btn-primary btn-hover-yellow-base page-scroll no-border-radius btn-block">Hover Yellow</a>
                         </div>
 
                         <div class="col-sm-6">
-                            <a href="#" class="btn btn-default btn__hover__blue page-scroll no-border-radius btn-block">Hover Blue</a>
+                            <a href="#" class="btn btn-primary btn-hover-blue-base page-scroll no-border-radius btn-block">Hover Blue</a>
                         </div>
 
                         <div class="col-sm-6">
-                            <a href="#" class="btn btn-default btn__hover__red page-scroll no-border-radius btn-block">Hover Red</a>
+                            <a href="#" class="btn btn-primary btn-hover-red-base page-scroll no-border-radius btn-block">Hover Red</a>
                         </div>
 
                     </div>
@@ -245,11 +416,11 @@
             </div>
 
             <!-- Pricing -->
-            <div class="container margin-top">
+            <div class="container margin-top-lg">
                 <div class="row">
                     <div class="col-md-8">
                         <h3 class="section-heading">Pricing</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et purus eget magna laoreet aliquam.</p>
+                        <p>A small box suitable for service prices or showing products can be made with <code>thumbnail</code>, and then style it with <code>bg</code>, <code>bg-grey-light</code>, and <code>bg-hover-blue-base</code>, the box buttons behave as normal buttons.</p>
                     </div>
                 </div>
             </div>
@@ -261,11 +432,11 @@
                     <div class="col-md-12 padding-sm">
 
                         <div class="col-md-4">
-                            <div class="thumbnail bg bg__grey-light bg__hover__blue wow bounceIn" data-wow-delay="0s">
+                            <div class="thumbnail bg bg-grey-light bg-hover-blue-base wow bounceIn" data-wow-delay="0s">
                                 <div class="caption">
                                     <h3>Product</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    <p><button type="button" class="btn btn-default btn__hover__blue-hover no-border-radius btn-block" role="button" data-toggle="modal" data-target="#testProduct">Read more</button></p>
+                                    <p><button type="button" class="btn btn-primary btn-hover-blue-dark no-border-radius btn-block" role="button" data-toggle="modal" data-target="#testProduct">Read more</button></p>
                                 </div>
                             </div>
                         </div>
@@ -275,16 +446,16 @@
                             <div class="modal-dialog" role="document">
 
                                 <div class="modal-content">
-                                    <div class="modal-header">
+                                    <div class="modal-header no-border">
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                         <h4 class="modal-title" id="myModalLabel">Product</h4>
                                     </div>
                                     <div class="modal-body">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                     </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default no-border-radius" data-dismiss="modal">Return</button>
-                                        <button type="button" class="btn btn-default btn__blue btn__hover__blue-hover no-border-radius">Buy now - &euro; 10.00</button>
+                                    <div class="modal-footer no-border">
+                                        <button type="button" class="btn btn-primary no-border-radius" data-dismiss="modal">Return</button>
+                                        <button type="button" class="btn btn-primary btn-blue-base btn-hover-blue-dark no-border-radius">Buy now - &euro; 10.00</button>
                                      </div>
                                 </div>
 
@@ -292,21 +463,21 @@
                         </div>
 
                         <div class="col-md-4">
-                            <div class="thumbnail bg bg__blue wow bounceIn" data-wow-delay="0.2s">
+                            <div class="thumbnail bg bg-blue-base wow bounceIn" data-wow-delay="0.2s">
                                 <div class="caption">
                                     <h3>Product</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    <p><button type="button" class="btn btn-default btn__hover__blue-hover no-border-radius btn-block" role="button">Buy now - &euro; 10.00</button></p>
+                                    <p><button type="button" class="btn btn-primary btn-hover-blue-dark no-border-radius btn-block" role="button">Buy now - &euro; 10.00</button></p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-md-4">
-                            <div class="thumbnail bg bg__grey-light bg__hover__red wow bounceIn" data-wow-delay="0.1s">
+                            <div class="thumbnail bg bg-grey-light bg-hover-red-base wow bounceIn" data-wow-delay="0.1s">
                                 <div class="caption">
                                     <h3>Product</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    <p><button type="button" class="btn btn-default btn__hover__red-hover no-border-radius btn-block" role="button">Buy now - &euro; 10.00</button></p>
+                                    <p><button type="button" class="btn btn-primary btn-hover-red-dark no-border-radius btn-block" role="button">Buy now - &euro; 10.00</button></p>
                                 </div>
                             </div>
                         </div>
@@ -317,31 +488,31 @@
                     <div class="col-md-12 padding-sm">
 
                         <div class="col-md-4">
-                            <div class="thumbnail bg bg__blue wow bounceIn" data-wow-delay="0.1s">
+                            <div class="thumbnail bg bg-blue-base wow bounceIn" data-wow-delay="0.1s">
                                 <div class="caption">
                                     <h3>Product</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    <p><button type="button" class="btn btn-default btn__hover__blue-hover no-border-radius btn-block" role="button">Buy now</button></p>
+                                    <p><button type="button" class="btn btn-primary btn-hover-blue-dark no-border-radius btn-block" role="button">Buy now</button></p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-md-4">
-                            <div class="thumbnail bg bg__yellow wow bounceIn" data-wow-delay="0s">
+                            <div class="thumbnail bg bg-yellow-base wow bounceIn" data-wow-delay="0s">
                                 <div class="caption">
                                     <h3>Product</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    <p><button type="button" class="btn btn-default btn__hover__yellow-hover no-border-radius btn-block" role="button">Buy now</button></p>
+                                    <p><button type="button" class="btn btn-primary btn-hover-yellow-dark no-border-radius btn-block" role="button">Buy now</button></p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-md-4">
-                            <div class="thumbnail bg bg__red wow bounceIn" data-wow-delay="0.2s">
+                            <div class="thumbnail bg bg-red-base wow bounceIn" data-wow-delay="0.2s">
                                 <div class="caption">
                                     <h3>Product</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    <p><button type="button" class="btn btn-default btn__hover__red-hover no-border-radius btn-block" role="button">Buy now</button></p>
+                                    <p><button type="button" class="btn btn-primary btn-hover-red-dark no-border-radius btn-block" role="button">Buy now</button></p>
                                 </div>
                             </div>
                         </div>
@@ -354,20 +525,20 @@
         </section>
 
         <!-- Text box -->
-        <section class="bg bg__blue" id="portfolio">
+        <section class="bg bg-blue-base" id="portfolio">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
 
                         <div class="col-md-6">
                             <h2 class="section-heading">We've amazing ideas.</h2>
-                            <hr class="hr__white">
+                            <hr class="">
                             <p class="text-muted">Aliquam ornare sapien ut velit consectetur, eget ornare arcu euismod. Integer iaculis et augue sed sagittis. In euismod eros ut libero pretium, quis volutpat ante sollicitudin.</p>
                         </div>
 
                         <div class="col-md-6">
                             <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et purus eget magna laoreet aliquam. Aliquam ornare sapien ut velit consectetur, eget ornare arcu euismod. Integer iaculis et augue sed sagittis. In euismod eros ut libero pretium, quis volutpat ante sollicitudin.</p>
-                            <p><a class="link__white" href="#">Read more...</a></p>
+                            <p><a class="link-white" href="#">Read more</a></p>
                         </div>
 
                     </div>
@@ -382,7 +553,7 @@
                     <div class="col-lg-4 col-sm-6">
                         <a href="#" class="portfolio-box">
                             <img src="http://placehold.it/650x350" class="img-responsive" alt="">
-                            <div class="portfolio-box-caption portfolio__hover__red">
+                            <div class="portfolio-box-caption portfolio-hover-red">
                                 <div class="portfolio-box-caption-content">
                                     <div class="project-category text-muted">
                                         Category
@@ -397,7 +568,7 @@
                     <div class="col-lg-4 col-sm-6">
                         <a href="#" class="portfolio-box">
                             <img src="http://placehold.it/650x350" class="img-responsive" alt="">
-                            <div class="portfolio-box-caption portfolio__hover__yellow">
+                            <div class="portfolio-box-caption portfolio-hover-yellow">
                                 <div class="portfolio-box-caption-content">
                                     <div class="project-category text-muted">
                                         Category
@@ -412,7 +583,7 @@
                     <div class="col-lg-4 col-sm-6">
                         <a href="#" class="portfolio-box">
                             <img src="http://placehold.it/650x350" class="img-responsive" alt="">
-                            <div class="portfolio-box-caption portfolio__hover__yellow">
+                            <div class="portfolio-box-caption portfolio-hover-yellow">
                                 <div class="portfolio-box-caption-content">
                                     <div class="project-category text-muted">
                                         Category
@@ -427,7 +598,7 @@
                     <div class="col-lg-4 col-sm-6">
                         <a href="#" class="portfolio-box">
                             <img src="http://placehold.it/650x350" class="img-responsive" alt="">
-                            <div class="portfolio-box-caption portfolio__hover__blue">
+                            <div class="portfolio-box-caption portfolio-hover-blue">
                                 <div class="portfolio-box-caption-content">
                                     <div class="project-category text-muted">
                                         Category
@@ -442,7 +613,7 @@
                     <div class="col-lg-4 col-sm-6">
                         <a href="#" class="portfolio-box">
                             <img src="http://placehold.it/650x350" class="img-responsive" alt="">
-                            <div class="portfolio-box-caption portfolio__hover__red">
+                            <div class="portfolio-box-caption portfolio-hover-red">
                                 <div class="portfolio-box-caption-content">
                                     <div class="project-category text-muted">
                                         Category
@@ -457,7 +628,7 @@
                     <div class="col-lg-4 col-sm-6">
                         <a href="#" class="portfolio-box">
                             <img src="http://placehold.it/650x350" class="img-responsive" alt="">
-                            <div class="portfolio-box-caption portfolio__hover__red">
+                            <div class="portfolio-box-caption portfolio-hover-red">
                                 <div class="portfolio-box-caption-content">
                                     <div class="project-category text-muted">
                                         Category
@@ -482,7 +653,7 @@
                             <h2>Check this, it's very important!</h2>
                         </div>
                         <div class="col-md-4">
-                            <a href="#" class="btn btn-default btn__white btn__hover__yellow">OK, got it!</a>
+                            <a href="#" class="btn btn-primary btn-white btn-hover-yellow-base">Read more</a>
                         </div>
                     </div>
                 </div>
@@ -495,33 +666,33 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 center ">
                         <h2 class="section-heading">Contact</h2>
-                        <hr class="hr__red">
-                        <p>Fusce nec augue a mi facilisis interdum vel maximus eros. Etiam in ante velit. Integer non imperdiet eros, et placerat orci. Curabitur rutrum arcu a vulputate vestibulum.</p>
+                        <hr class="hr-red-base">
+                        <p>The bordered box below is created with <code>border-muted</code>.</p>
                     </div>
 
                     <!-- Bordered box -->
-                    <div class="col-md-12 padding-lg margin-top border-muted">
+                    <div class="col-md-12 padding-lg margin-top-sm border-muted">
 
                         <div class="col-lg-3 col-md-6 center padding-sm">
-                            <a class="link__blue link__hover__blue-hover" href="#">
+                            <a class="link-blue-base link-hover-blue-dark" href="#">
                                 <i class="fa fa-facebook fa-3x wow bounceIn"></i>
                                 <p class="no-margin">Like us on Facebook</p>
                             </a>
                         </div>
                         <div class="col-lg-3 col-md-6 center padding-sm">
-                            <a class="link__blue link__hover__blue-hover" href="#">
+                            <a class="link-blue-base link-hover-blue-dark" href="#">
                                 <i class="fa fa-twitter fa-3x wow bounceIn" data-wow-delay=".1s"></i>
                                 <p class="no-margin">Follow us on Twitter</p>
                             </a>
                         </div>
                         <div class="col-lg-3 col-md-6 center padding-sm">
-                            <a class="link__hover__red" href="#">
+                            <a class="link-hover-red-base" href="#">
                                 <i class="fa fa-phone fa-3x wow bounceIn" data-wow-delay=".2s"></i>
                                 <p class="no-margin">555-045-2336</p>
                             </a>
                         </div>
                         <div class="col-lg-3 col-md-6 center padding-sm">
-                            <a class="link__hover__red" href="#">
+                            <a class="link-hover-red-base" href="#">
                                 <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
                                 <p class="no-margin">hello@gmail.com</p>
                             </a>
@@ -534,7 +705,7 @@
 
         <!-- Back to top -->
         <div class="container-fluid no-margin no-padding">
-            <a href="#page-top" class="btn btn-default btn__red btn__hover__red-hover page-scroll no-border-radius btn-block"><i class="fa fa-arrow-circle-o-up"></i> Back to top</a>
+            <a href="#page-top" class="btn btn-primary btn-red-base btn-hover-red-dark page-scroll no-border-radius btn-block"><i class="fa fa-arrow-circle-o-up"></i> Back to top</a>
         </div>
 
         <!-- Footer -->
@@ -569,10 +740,10 @@
 
                     </div>
 
-                    <div class="col-md-12 padding-sm margin-top">
+                    <div class="col-md-12 padding-sm margin-top-sm">
 
                         <div class="col-md-12 center">
-                            <p class="footer__copyright text-muted">Copyright © 2015 by BowerBootSass - <a class="link__white" href="#">Terms of Use</a> - <a class="link__white" href="#">Cookies</a> - Made with ♥ in Stockholm.</p>
+                            <p class="footer-copyright text-muted">Copyright © 2015 by BowerBootSass - <a class="link-white" href="#">Terms of Use</a> - <a class="link-white" href="#">Cookies</a> - made with ♥ in Stockholm.</p>
                         </div>
                     </div>
                 </div>

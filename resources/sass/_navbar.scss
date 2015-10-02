@@ -20,7 +20,7 @@
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
-.navbar-default .navbar-header .navbar-brand:focus { color: $blue; }
+.navbar-default .navbar-header .navbar-brand:focus { color: $blue-base; }
 
 .navbar-default .nav > li > a,
 .navbar-default .nav > li > a:focus {
@@ -32,13 +32,13 @@
 
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus:hover { 
-    color                   : $blue; 
+    color                   : $blue-base; 
     background-color        : $grey-light
 }
 
 .navbar-default .nav > li.active > a,
 .navbar-default .nav > li.active > a:focus {
-    color                   : $blue !important;
+    color                   : $blue-base !important;
     background-color        : transparent;
 }
 
@@ -90,7 +90,7 @@
     .navbar-default.affix {
         border-color        : $grey-light;
         background-color    : $white;
-        box-shadow          : 0 5px rgba(0,0,0,.15);
+        /*box-shadow          : 0 5px rgba(0,0,0,.15);*/
     }
 
     .navbar-default.affix .navbar-header .navbar-brand {
@@ -99,11 +99,11 @@
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
-    .navbar-default.affix .navbar-header .navbar-brand:focus { color: $blue; }
+    .navbar-default.affix .navbar-header .navbar-brand:focus { color: $blue-base; }
 
     .navbar-default.affix .nav > li > a,
     .navbar-default.affix .nav > li > a:focus { color: $grey-base; }
 
     .navbar-default.affix .nav > li > a:hover,
-    .navbar-default.affix .nav > li > a:focus:hover { color: $blue; }
+    .navbar-default.affix .nav > li > a:focus:hover { color: $blue-base; }
 }

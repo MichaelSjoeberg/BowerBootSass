@@ -18,7 +18,7 @@
 	padding 				: 25px 50px;
 }
 
-.btn-default {
+.btn-primary {
 	color 					: $white;
 	background-color 		: $grey-base;
 	-webkit-transition      : all .35s;
@@ -26,61 +26,62 @@
     transition              : all .35s;
 
     /* Buttons colors */
-	&.btn__white  { background-color: $white; color: $grey-base; }
-	&.btn__blue   { background-color: $blue; }
-	&.btn__yellow { background-color: $yellow; color: $white; }
-	&.btn__red    { background-color: $red; }
+	&.btn-white       { background-color: $white; color: $grey-base; }
+	&.btn-blue-base   { background-color: $blue-base; }
+	&.btn-yellow-base { background-color: $yellow-base; }
+	&.btn-red-base    { background-color: $red-base; }
+    &.btn-green-base  { background-color: $green-base; }
 }
 
 /* Hover */
-.btn-default:hover,
-.btn-default:focus,
-.btn-default.focus,
-.btn-default:active,
-.btn-default.active,
-.open > .dropdown-toggle.btn-default {
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
     color                   : $white;
     background-color        : $grey-base;
     outline                 : none;  
 
     /* Hover colors */
-    &.btn__hover__white  	   { background-color: $white; color: $grey-base; }
-    &.btn__hover__blue 	       { background-color: $blue; }
-    &.btn__hover__blue-hover   { background-color: $blue-hover; }
-    &.btn__hover__yellow  	   { background-color: $yellow; color: $white; }
-    &.btn__hover__yellow-hover { background-color: $yellow-hover; color: $white; }
-	&.btn__hover__red          { background-color: $red; }
-	&.btn__hover__red-hover    { background-color: $red-hover; }
+    &.btn-hover-white  	    { background-color: $white; color: $grey-base; }
+    &.btn-hover-blue-base 	{ background-color: $blue-base; }
+    &.btn-hover-blue-dark   { background-color: $blue-dark; }
+    &.btn-hover-yellow-base { background-color: $yellow-base; color: $white; }
+    &.btn-hover-yellow-dark { background-color: $yellow-dark; color: $white; }
+	&.btn-hover-red-base    { background-color: $red-base; }
+	&.btn-hover-red-dark    { background-color: $red-dark; }
 }
 
-.btn-default:active,
-.btn-default.active,
-.open > .dropdown-toggle.btn-default { background-image: none; }
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary { background-image: none; }
 
-.btn-default.disabled,
-.btn-default[disabled],
-fieldset[disabled] .btn-default,
-.btn-default.disabled:hover,
-.btn-default[disabled]:hover,
-fieldset[disabled] .btn-default:hover,
-.btn-default.disabled:focus,
-.btn-default[disabled]:focus,
-fieldset[disabled] .btn-default:focus,
-.btn-default.disabled.focus,
-.btn-default[disabled].focus,
-fieldset[disabled] .btn-default.focus,
-.btn-default.disabled:active,
-.btn-default[disabled]:active,
-fieldset[disabled] .btn-default:active,
-.btn-default.disabled.active,
-.btn-default[disabled].active,
-fieldset[disabled] .btn-default.active {
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled].focus,
+fieldset[disabled] .btn-primary.focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
     color                   : $grey-base; 
     border-color            : $white;
     background-color        : $grey-light;
 }
 
-.btn-default .badge {
-    color                   : $white;
-    background-color        : $grey-base;
+.btn-primary .badge {
+    color                   : $grey-base;
+    background-color        : $white;
 }
